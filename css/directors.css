@@ -1,0 +1,21 @@
+/* mobile */
+#photoWrapper{
+    width:max-content;
+    height:max-content;
+    margin:10px auto;
+    border-radius:50%;
+    overflow:hidden;
+}
+img#directorPhoto{
+    max-width:100%;
+    width:200px;
+    margin:0 auto;
+}
+/* tablet */
+@media all and (min-width: 450px) and (max-width: 1023px){
+
+}
+/* desktop */
+@media all and (min-width: 1024px){
+
+}

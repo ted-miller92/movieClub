@@ -1,0 +1,328 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+html{
+    overflow-x: hidden;
+    width: 100vw;
+}
+h3, h5{
+    padding:7px 2px;
+    font-size:1.5em;
+}
+h2{
+    font-size:350%;
+    font-family:'Lobster', sans-serif;
+    background-image:linear-gradient(135deg, #f71, #c1e);
+    background-size:100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
+}
+p{
+    padding:2px;
+    font-size:21px;
+    line-height:1.5;
+}
+a{
+    color:#71a;
+    transition:color 0.2s linear;
+}
+a:hover{
+    color:#c1e;
+    transition:color 0.2s linear;
+}
+ul{
+    list-style-type:none;
+    padding:5px 0;
+}
+.purple{
+    padding:10px;
+    background-image: linear-gradient(135deg, rgba(119, 17, 170, 0.1), rgba(119, 17, 170, 0.4))
+}
+.orange{
+    padding:10px;
+    background-image: linear-gradient(135deg, rgba(255, 120, 17, 0.1), rgba(255, 120, 17, 0.4));
+}
+.purpleOrange{
+    padding:10px;
+    background-image: linear-gradient(135deg, rgba(119, 17, 170, 0.1), rgba(255, 120, 17, 0.4));
+}
+/*****************/
+/* Mobile Styles */
+/*****************/
+
+#wrapper{
+    width:100%;
+    margin:0 auto;
+    min-height:90vh;
+}
+#hero{
+    position:relative;
+    height:30vh;
+    width:100%;
+    margin: 0 auto;
+    background-image:linear-gradient(135deg, #f71, #c1e, #71a);
+    clear:both;
+}
+h1{
+    font-family:'Lobster', sans-serif;
+    position:absolute;
+    font-size: 350%;
+    bottom:0;
+    padding: 0;
+    color:white;
+}
+/* success div styles */
+#success, .welcome-logout{
+    position:absolute;
+    margin:15px 7.5px;
+    width:100px;
+    background-color:white;
+    border-radius:6px;
+    padding:2px;
+    right:7.5px;
+    
+}
+#success p, .welcome-logout p{
+    font-size:1em;
+}
+.welcome-logout a{
+    color:#71a;
+    transition:color 0.2s linear;
+}
+.welcome-logout a:hover{
+    color:#c1e;
+    transition:color 0.2s linear;
+}
+    /* navigation styles */
+div#menuIcon{
+    display:block;
+    padding:15px 40px 15px 15px;
+    color:white;
+    font-size:200%;
+}
+nav{
+    margin: 0 auto;
+}
+nav ul.menu{
+    display:none;
+}
+nav ul.visible{
+    display:block;
+    position:absolute;
+    z-index:10;
+    width:100%;
+    background-image:linear-gradient(105deg, #f71, #c1e, #71a);
+}
+nav ul.visible{
+    list-style-type: none;
+}
+nav li{
+    padding:30px 40px 30px 30px;
+}
+nav li a{
+    color:white;
+    text-decoration: none;
+    transition: color 0.2s linear;
+}
+nav li a:hover{
+    color:#71a;
+    text-decoration:underline;
+    transition: color 0.2s linear;
+}
+nav li.current a{
+    text-decoration: underline;
+}
+
+/* end nav styles */
+
+footer{
+    min-height:100px;
+    background-image:linear-gradient(105deg, rgba(255, 120, 17, 0.2), rgba(205, 17, 238, 0.2), rgba(119, 17, 170, 0.2));
+    display:flex;
+    flex-direction:column;
+    text-align:center;
+}
+footer p, a{
+    padding:2px 0;
+
+}
+
+
+
+/*****************/
+/* Tablet Styles */
+/*****************/
+@media screen and (min-width: 450px) and (max-width: 1023px)
+{
+    #wrapper{
+        width:100%;
+        margin:0 auto;
+    }
+    #hero{
+        height:220px;
+        width:100%;
+        margin:0 auto;
+        background-image:linear-gradient(135deg, #f71, #c1e, #71a);
+        clear:both;
+    }
+    h1{
+        position:absolute;
+        font-size: 350%;
+        bottom:0;
+        padding: 0;
+        color:white;
+    }
+    /* success div styles */
+    /* same as mobile */
+    header{
+        width:100%;
+        margin:0 auto;
+    }
+    /* navigation styles */
+    div#menuIcon{
+        display:block;
+        padding:15px 40px 15px 15px;
+    }
+    nav{
+        margin: 0 auto;
+    }
+    nav ul.menu{
+        display:none;
+    }
+    nav ul.visible{
+        display:block;
+        position:absolute;
+        width:100%;
+    }
+    nav ul.visible{
+        list-style-type: none;
+    }
+    /* end nav styles */
+    main{
+        padding:10px;
+        width:65%;
+        float:left;
+    }
+    aside{
+        padding:10px;
+        width:35%;
+        float:right;
+    }
+    footer{
+        clear:both;
+        margin:100px 0;
+        width:100%;
+        margin:0 auto;
+        text-align:center;
+    }
+}
+
+/*****************/
+/* Desktop Styles*/
+/*****************/
+@media screen and (min-width: 1023px){
+    #wrapper{
+        width:65%;
+        margin:0 auto;
+    }
+    header{
+        width:100%;
+    }
+    #hero{
+        height:220px;
+        width:100%;
+        margin:0 auto;
+        background-image:linear-gradient(135deg, #f71, #c1e, #71a);
+        clear:both;
+    }
+    h1{
+        position:absolute;
+        font-size: 500%;
+        bottom:0;
+        padding: 0;
+        color:white;
+        left: 17.5%;
+    }
+    /* success div styles */
+    #success, .welcome-logout{
+        position:absolute;
+        margin:15px 0;
+        width:100px;
+        background-color:white;
+        border-radius:6px;
+        padding:2px;
+        right:17.5%;
+    }
+    /* navigation styles */
+    div#menuIcon{
+        display:none;
+    }
+    nav{
+        width:65%;
+        margin: 0 auto;
+    }
+    nav ul{
+        list-style-type: none;
+    }
+    nav ul.menu{
+        display:block;
+    }
+    nav li{
+        float:left;
+        padding:15px 40px 15px 0;
+    }
+    li#meniIcon{
+        display:none;
+    }
+    main{
+        width:65%;
+        padding:10px;
+        float:left;
+    }
+    aside{
+        width:35%;
+        float:right;
+        padding:10px;
+    }
+    .gridContainer{
+        display:grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+    .orange{
+        margin:10px;
+        grid-column-start:1;
+        grid-column-end:3;
+        grid-row-start:1;
+        grid-row-end:2;
+        border-radius:10px;
+    }
+    .purpleOrange{
+        margin:10px;
+        grid-column-start:2;
+        grid-column-end:4;
+        grid-row-start:2;
+        grid-row-end:3;
+        border-radius:10px;
+    }
+    .purple{
+        margin:10px;
+        grid-column-start:1;
+        grid-column-end:3;
+        grid-row-start:3;
+        grid-row-end:4;
+        border-radius:10px;
+    }
+    footer{
+        clear:both;
+        margin:100px 0;
+        width:100%;
+        margin:0 auto;
+        text-align:center;
+    }
+}

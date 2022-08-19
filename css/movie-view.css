@@ -1,0 +1,44 @@
+.purple{
+    /* background-color: rgba(119, 17, 170, 0.1); */
+    background-image: linear-gradient(135deg, rgba(119, 17, 170, 0.1), rgba(119, 17, 170, 0.4))
+}
+.orange{
+    background-image: linear-gradient(135deg, rgba(255, 120, 17, 0.1), rgba(255, 120, 17, 0.4));
+}
+
+/* mobile */
+
+.movieView{
+    width:100%;
+    padding:10px;
+}
+#movieAside{
+    padding:10px;
+}
+#movieAside p{
+    font-style:italic;
+    font-size:1.3em;
+    color:#777;
+}
+div#photoWrapper{
+    padding:10px;
+}
+div#photoWrapper img{
+    max-width:100%;
+}
+/* tablet */
+@media all and (min-width: 450px) and (max-width: 1023px){
+    .movieView{
+        border-radius:10px;
+    }
+}
+
+/* desktop */
+@media all and (min-width: 1024px){
+    .movieView{
+        width:100%;
+        padding:10px;
+        border-radius:10px;
+    }
+}
+
